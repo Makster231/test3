@@ -411,7 +411,7 @@ body::-webkit-scrollbar-thumb { background: #1DBE7D; border-radius: 10px; box-sh
 
 .owl-dots .owl-dot:hover, .owl-dots .owl-dot.active { background-color: #ffdd0c; }
 
-@media (max-width: 640px) { .owl-dots .owl-dot { width: 11px; height: 11px; } }
+@media (max-width: 640px) { .owl-dots .owl-dot { width: 11px; height: 11px; min-width: 11px; min-height: 11px; box-sizing: border-box; } }
 
 /* purgecss end ignore */
 
