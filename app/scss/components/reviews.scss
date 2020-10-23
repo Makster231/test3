@@ -1,0 +1,153 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  @media (max-width: 960px) {
+    padding-bottom: 50px;
+  }
+
+  &_container {
+    overflow: hidden;
+  }
+
+  .owl-stage {
+    @media (max-width: 960px) {
+      align-items: flex-end;
+    }
+  }
+
+  h2 {
+    margin-bottom: 35px;
+    color: #242424;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    @media (max-width: 1168px) {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 960px) {
+      font-size: 26px;
+    }
+    @media (max-width: 640px) {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    @media (max-width: 360px) {
+      font-size: 20px;
+    }
+  }
+
+  &_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    &-slide {
+      &--top {
+        width: 340px;
+        padding: 24px 19px;
+        border-radius: 20px;
+        border: 1px solid #e0e0e0;
+        position: relative;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 40px;
+          bottom: -25px;
+          width: 30px;
+          height: 30px;
+          background: url(../../images/reviews/shark.jpg) center no-repeat;
+          background-size: contain;
+        }
+
+        @media (max-width: 1168px) {
+          width: 315px;
+          padding: 20px 15px;
+          margin-bottom: 30px;
+        }
+
+        @media (max-width: 960px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+            
+        @media (max-width: 640px) {
+          width: 320px;
+        }
+            
+        @media (max-width: 360px) {
+          width: 280px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 1.1;
+          width: 100%;
+
+          @media (max-width: 1168px) {
+            font-size: 13px;
+          }
+        }
+      }
+
+      &--bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media (max-width: 960px) {
+          justify-content: center;
+        }
+        img {
+          display: block;
+          width: 81px;
+          height: 81px;
+          margin-right: 20px;
+          border-radius: 50%;
+          @media (max-width: 1168px) {
+            width: 70px;
+            height: 70px;
+            margin-right: 15px;
+          }
+        }
+
+        p {
+          color: #242424;
+          font-size: 20px;
+          margin-bottom: 6px;
+          text-transform: uppercase;
+          font-weight: bold;
+          @media (max-width: 1168px) {
+            font-size: 18px;
+          }
+          @media (max-width: 960px) {
+            margin-right: 150px;
+          }
+            
+          @media (max-width: 640px) {
+            margin-right: 90px;
+          }
+        }
+
+        span {
+          font-size: 12px;
+          font-weight: 300;
+          color: #919191;
+        }
+      }
+    }
+  }
+}

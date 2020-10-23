@@ -1,0 +1,45 @@
+.owl {
+  &-carousel {
+    touch-action: none !important;
+  }
+  &-stage {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  &-nav {
+    display: none;
+  }
+
+  &-dots {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+
+    .owl-dot {
+      background-color: #eaeaea;
+      width: 15px;
+      height: 15px;
+      outline: 0;
+      border: 0;
+      border-radius: 50%;
+      margin-right: 10px;
+      transition: 0.4s ease;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &.active {
+        background-color: #ffdd0c;
+      }
+
+      @media (max-width: 640px) {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+}
