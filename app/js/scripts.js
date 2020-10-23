@@ -91,7 +91,7 @@ $(document).ready(function () {
     var AnimationScene = function AnimationScene(section, tween, durationTime, offsetValue) {
       var scene = new ScrollMagic.Scene({
         triggerElement: section,
-        triggerHook: 0.55,
+        triggerHook: 0.5,
         duration: durationTime,
         offset: offsetValue
       }).reverse(true).setTween(tween).addTo(controller);
@@ -248,20 +248,6 @@ $(document).ready(function () {
 
         AnimationScene('.js_reviews_container', _reviews);
       }
-    } // sign
-
-
-    if (document.querySelector('.js_sign_container')) {
-      var sign = new TimelineMax();
-      sign.from('.js_sign_container-anim--1', 0.3, {
-        x: '-40%',
-        opacity: 0
-      });
-      sign.from('.js_sign_container-anim--2', 0.3, {
-        x: '40%',
-        opacity: 0
-      });
-      AnimationScene('.js_sign_container', sign);
     }
   }
 });

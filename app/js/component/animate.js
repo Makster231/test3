@@ -5,7 +5,7 @@ $(document).ready(() => {
       function AnimationScene(section, tween, durationTime, offsetValue) {
           const scene = new ScrollMagic.Scene({
                   triggerElement: section,
-                  triggerHook: 0.55,
+                  triggerHook: 0.5,
                   duration: durationTime,
                   offset: offsetValue,
               })
@@ -164,22 +164,6 @@ $(document).ready(() => {
               AnimationScene('.js_reviews_container', reviews);
       }
       }
-      
-      // sign
-        if (document.querySelector('.js_sign_container')) {
-            const sign = new TimelineMax();
-            sign.from('.js_sign_container-anim--1', 0.3, {
-                x: '-40%',
-                opacity: 0,
-            });
-            sign.from('.js_sign_container-anim--2', 0.3, {
-                x: '40%',
-                opacity: 0,
-            });
-            AnimationScene('.js_sign_container', sign);
-        }
-  
-
 
 
   }
